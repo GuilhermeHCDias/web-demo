@@ -38,9 +38,24 @@ h3 {
   margin-top: 1.2em;
 }
 
+.tagline {
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin: 0 0 0.5em;
+}
+
 .lead {
   color: var(--muted);
   font-size: 1.1rem;
+}
+
+.footer {
+  margin-top: 3em;
+  padding-top: 1em;
+  border-top: 1px solid #d9dde2;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 button {
