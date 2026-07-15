@@ -10,8 +10,10 @@ It demonstrates a clean heading hierarchy and a sprinkle of interactivity.
 ## Features
 
 - A clear heading hierarchy (`h1`, `h2`, `h3`)
-- A styled, interactive button
+- A styled, interactive button plus a reset button
 - A click counter powered by a few lines of JavaScript
+- A celebratory message every 10 clicks
+- Automatic dark mode via `prefers-color-scheme`
 
 ## Getting Started
 
