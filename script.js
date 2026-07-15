@@ -5,7 +5,11 @@ const counter = document.getElementById("counter");
 let clicks = 0;
 
 function render() {
-  counter.textContent = `You have clicked ${clicks} times.`;
+  if (clicks > 0 && clicks % 10 === 0) {
+    counter.textContent = `Nice! ${clicks} clicks and counting.`;
+  } else {
+    counter.textContent = `You have clicked ${clicks} times.`;
+  }
 }
 
 button.addEventListener("click", () => {
