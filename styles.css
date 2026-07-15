@@ -74,6 +74,18 @@ button:hover {
   opacity: 0.9;
 }
 
+.button-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+button.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
 .counter {
   color: var(--muted);
   margin-top: 12px;
