@@ -94,6 +94,11 @@ button.secondary {
   border: 1px solid var(--accent);
 }
 
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .counter {
   color: var(--muted);
   margin-top: 12px;
