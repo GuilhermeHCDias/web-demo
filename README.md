@@ -1,6 +1,11 @@
 # Web Demo
 
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+
 A small static web page built with plain **HTML**, **CSS** and **JavaScript**.
+It demonstrates a clean heading hierarchy and a sprinkle of interactivity.
 
 ## Features
 
