@@ -5,6 +5,14 @@
   --muted: #52606d;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16181d;
+    --fg: #e4e7eb;
+    --muted: #9aa5b1;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
