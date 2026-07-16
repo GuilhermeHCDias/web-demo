@@ -1,0 +1,46 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-html:
+    name: 1. Lint HTML
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate HTML with htmlhint
+        run: npx --yes htmlhint "*.html"
+
+  lint-css:
+    name: 2. Lint CSS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate CSS with stylelint
+        run: |
+          echo '{"rules": {}}' > .stylelintrc.json
+          npx --yes stylelint "*.css" --config .stylelintrc.json
+
+  lint-js:
+    name: 3. Lint JavaScript
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JS syntax
+        run: node --check script.js
+
+  build:
+    name: 4. Build (sample step, no deploy)
+    needs: [lint-html, lint-css, lint-js]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Package site files
+        run: |
+          mkdir -p dist
+          cp index.html styles.css script.js dist/
+          echo "Build artifact ready in dist/ (this is just a sample step, nothing is deployed)"
