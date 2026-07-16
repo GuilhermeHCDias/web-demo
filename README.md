@@ -1,12 +1,19 @@
 # Web Demo
 
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+
 A small static web page built with plain **HTML**, **CSS** and **JavaScript**.
+It demonstrates a clean heading hierarchy and a sprinkle of interactivity.
 
 ## Features
 
 - A clear heading hierarchy (`h1`, `h2`, `h3`)
-- A styled, interactive button
+- A styled, interactive button plus a reset button
 - A click counter powered by a few lines of JavaScript
+- A celebratory message every 10 clicks
+- Automatic dark mode via `prefers-color-scheme`
 
 ## Getting Started
 

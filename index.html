@@ -9,6 +9,7 @@
   <body>
     <main class="container">
       <h1>Welcome to the Web Demo</h1>
+      <p class="tagline">HTML · CSS · JavaScript</p>
       <p class="lead">
         A tiny page built with plain HTML, CSS and JavaScript to showcase a
         heading hierarchy and an interactive button.
@@ -29,8 +30,21 @@
       <h2>Try It Out</h2>
       <p>Click the button below to see a little bit of JavaScript in action.</p>
 
-      <button id="actionButton" type="button">Click me</button>
-      <p id="counter" class="counter">You have clicked 0 times.</p>
+      <div class="button-row">
+        <button id="actionButton" type="button">Click me</button>
+        <button id="resetButton" type="button" class="secondary">Reset</button>
+      </div>
+      <p id="counter" class="counter" aria-live="polite">You have clicked 0 times.</p>
+
+      <h2>About</h2>
+      <p>
+        This project is intentionally minimal so it stays easy to read and
+        modify. Feel free to fork it and make it your own.
+      </p>
+
+      <footer class="footer">
+        <p>Built for demonstration purposes.</p>
+      </footer>
     </main>
 
     <script src="script.js"></script>
