@@ -5,6 +5,7 @@ const counter = document.getElementById("counter");
 let clicks = 0;
 
 function render() {
+  document.title = clicks > 0 ? `(${clicks}) Web Demo` : "Web Demo";
   if (clicks > 0 && clicks % 10 === 0) {
     counter.textContent = `Nice! ${clicks} clicks and counting.`;
   } else {

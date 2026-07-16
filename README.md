@@ -14,6 +14,11 @@ It demonstrates a clean heading hierarchy and a sprinkle of interactivity.
 - A click counter powered by a few lines of JavaScript
 - A celebratory message every 10 clicks
 - Automatic dark mode via `prefers-color-scheme`
+- A "Nice!" celebration message every 10 clicks (see `script.js`)
+
+## Changelog
+
+- **2026-07-16** — Test PR opened to validate the Octo app integration.
 
 ## Getting Started
 
