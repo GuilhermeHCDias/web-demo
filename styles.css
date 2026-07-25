@@ -72,8 +72,8 @@ button {
   background: var(--accent);
   color: #fff;
   font-size: 1rem;
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 12px 24px;
+  border-radius: 6px;
   cursor: pointer;
   transition: opacity 0.15s ease;
 }

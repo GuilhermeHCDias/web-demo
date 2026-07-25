@@ -18,6 +18,7 @@ It demonstrates a clean heading hierarchy and a sprinkle of interactivity.
 
 ## Changelog
 
+- **2026-07-25** — Enhanced button styling with improved padding and border-radius.
 - **2026-07-16** — Test PR opened to validate the Octo app integration.
 
 ## Getting Started
