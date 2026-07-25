@@ -20,6 +20,7 @@ button.addEventListener("click", () => {
 
 resetButton.addEventListener("click", () => {
   clicks = 0;
+  console.log("Counter reset to 0");
   render();
 });
 

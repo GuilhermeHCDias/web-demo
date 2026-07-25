@@ -25,6 +25,7 @@ It demonstrates a clean heading hierarchy and a sprinkle of interactivity.
 1. Clone the repository.
 2. Open `index.html` in your browser.
 3. Click the button and watch the counter update.
+4. For comprehensive testing procedures, see [TESTING_GUIDE.md](./TESTING_GUIDE.md).
 
 ## Project Structure
 
