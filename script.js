@@ -15,6 +15,7 @@ function render() {
 
 button.addEventListener("click", () => {
   clicks += 1;
+  console.log(`Button clicked. Total clicks: ${clicks}`);
   render();
 });
 

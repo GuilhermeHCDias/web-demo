@@ -15,6 +15,7 @@ It demonstrates a clean heading hierarchy and a sprinkle of interactivity.
 - A celebratory message every 10 clicks
 - Automatic dark mode via `prefers-color-scheme`
 - A "Nice!" celebration message every 10 clicks (see `script.js`)
+- Full WCAG 2.1 accessibility support with ARIA labels
 
 ## Changelog
 
