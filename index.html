@@ -30,9 +30,9 @@
       <h2>Try It Out</h2>
       <p>Click the button below to see a little bit of JavaScript in action.</p>
 
-      <div class="button-row">
-        <button id="actionButton" type="button">Click me</button>
-        <button id="resetButton" type="button" class="secondary">Reset</button>
+      <div class="button-row" role="group" aria-label="Demo controls">
+        <button id="actionButton" type="button" aria-pressed="false">Click me</button>
+        <button id="resetButton" type="button" class="secondary" aria-label="Reset counter">Reset</button>
       </div>
       <p id="counter" class="counter" aria-live="polite">You have clicked 0 times.</p>
 
