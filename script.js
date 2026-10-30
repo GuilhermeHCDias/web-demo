@@ -1,4 +1,5 @@
 const button = document.getElementById("actionButton");
+const purpleButton = document.getElementById("purpleButton");
 const resetButton = document.getElementById("resetButton");
 const counter = document.getElementById("counter");
 
@@ -14,6 +15,11 @@ function render() {
 }
 
 button.addEventListener("click", () => {
+  clicks += 1;
+  render();
+});
+
+purpleButton.addEventListener("click", () => {
   clicks += 1;
   render();
 });
