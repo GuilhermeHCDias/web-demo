@@ -1,6 +1,6 @@
 # Green "Test" button
 
-status: todo
+status: done
 created: 2026-11-11
 type: feat
 depends-on: none
@@ -15,12 +15,12 @@ Add a green button labelled "Test" to the page, so the user can see a new visibl
 - The repository has no test suite. CI (`.github/workflows/ci.yml`) runs htmlhint on `*.html`, stylelint on `*.css`, and `node --check script.js`.
 
 ## Acceptance criteria
-- [ ] C1. When the page loads, the system shall show a button whose visible text is exactly "Test" inside the "Try It Out" button row.
-- [ ] C2. The "Test" button shall have a green background, distinct from the blue accent used by "Click me", with white text that is readable on it.
-- [ ] C3. The "Test" button shall use the same size, padding and border radius as the existing buttons, and show the same hover and keyboard-focus feedback.
-- [ ] C4. When the user clicks "Test", the system shall leave the click counter, the document title and the other buttons unchanged.
-- [ ] C5. The existing "Click me" and "Reset" buttons and the counter shall behave as before.
-- [ ] C6. The HTML and CSS shall pass the repository's htmlhint and stylelint checks, and `script.js` shall pass `node --check`.
+- [x] C1. When the page loads, the system shall show a button whose visible text is exactly "Test" inside the "Try It Out" button row.
+- [x] C2. The "Test" button shall have a green background, distinct from the blue accent used by "Click me", with white text that is readable on it.
+- [x] C3. The "Test" button shall use the same size, padding and border radius as the existing buttons, and show the same hover and keyboard-focus feedback.
+- [x] C4. When the user clicks "Test", the system shall leave the click counter, the document title and the other buttons unchanged.
+- [x] C5. The existing "Click me" and "Reset" buttons and the counter shall behave as before.
+- [x] C6. The HTML and CSS shall pass the repository's htmlhint and stylelint checks, and `script.js` shall pass `node --check`.
 
 ## Out of scope
 - Any action, handler or state attached to the "Test" button.
@@ -35,3 +35,6 @@ Add a green button labelled "Test" to the page, so the user can see a new visibl
 
 ## Verification
 - Open `index.html` in a browser: a green "Test" button appears in the "Try It Out" row, next to "Click me" and "Reset", and clicking it leaves the counter at its previous value.
+
+## Implementation
+- C1: proven by inline check of index.html button-row (button text exactly "Test"), seen red before the change (FAIL), green after. C2: proven by inline check of styles.css `button.success` background #2e7d32, seen red first; white on #2e7d32 is about 5:1 contrast. C3: shared `button` rule supplies size, padding, radius, hover and focus; the check that `button.success` does not override padding or border-radius passed before the change too, so it guards rather than proves. C4/C5: no handler attached to the new button, script.js and the existing buttons untouched (git diff). Verify: htmlhint + node --check passed; stylelint (CI config) passed on styles.css. End-to-end check of the Verification section not run here: it needs a browser.
